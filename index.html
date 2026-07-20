@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icon-192.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="weatherEffect"></div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Theme Button -->
+    <button id="themeBtn" class="theme-btn">
+        🌙
+    </button>
+
+    <div class="container">
+
+        <h1>🌤 Weather App Pro</h1>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Search city...">
+
+            <button id="searchBtn">
+                🔍 Search
+            </button>
+
+            <button id="locationBtn">
+                📍 My Location
+            </button>
+
+        </div>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <div class="top">
+
+                <div>
+                    <h2 id="cityName">City</h2>
+                    <p id="country">Country</p>
+                </div>
+
+                <img
+                    id="weatherIcon"
+                    src=""
+                    alt="Weather Icon">
+
+            </div>
+
+            <h1 id="temp">--°</h1>
+
+            <p id="description">
+                Weather Description
+            </p>
+
+            <!-- Details -->
+
+            <div class="details">
+
+                <div class="detail-card">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>💨 Wind</h3>
+                    <p id="wind">-- m/s</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>🌡 Feels Like</h3>
+                    <p id="feelsLike">--°</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>🕒 Updated</h3>
+                    <p id="updated">--</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>🌡 Pressure</h3>
+                    <p id="pressure">-- hPa</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>👁 Visibility</h3>
+                    <p id="visibility">-- km</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>🌅 Sunrise</h3>
+                    <p id="sunrise">--:--</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>🌇 Sunset</h3>
+                    <p id="sunset">--:--</p>
+                </div>
+
+            </div>
+
+            <!-- Weather Alert -->
+
+            <div id="weatherAlert" class="weather-alert">
+                ✅ No Weather Alerts
+            </div>
+
+            <!-- Live Clock -->
+
+            <div class="detail-card">
+
+                <h3>🕒 Live Clock</h3>
+
+                <p id="liveClock">00:00:00</p>
+
+            </div>
+
+            <!-- Favorite Cities -->
+
+            <div class="detail-card">
+
+                <h3>❤️ Favorite Cities</h3>
+
+                <button id="favoriteBtn">
+                    ➕ Add Current City
+                </button>
+
+                <div id="favoriteCities"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Forecast -->
+
+        <div class="forecast">
+
+            <h2>📅 5 Day Forecast</h2>
+
+            <div id="forecastCards"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
