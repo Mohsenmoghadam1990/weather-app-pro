@@ -35,7 +35,14 @@ https://mohsenmoghadam1990.github.io/weather-app-pro/
 
 ## 📸 Screenshots
 
-> Screenshots will be displayed here after they are linked.
+### Home
+![Home](home.png)
+
+### Search London
+![Search London](search-london.png.png)
+
+### Dark Mode
+![Dark Mode](dark-mode.png)
 
 ---
 
